@@ -31,7 +31,7 @@ export function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-shadow duration-300">
       <div className="flex items-center justify-between mb-4">
         <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getCategoryColor(product.category)}`}>
           {product.category}
@@ -39,21 +39,21 @@ export function ProductCard({ product }: ProductCardProps) {
         <span className="text-2xl">{product.emoji}</span>
       </div>
 
-      <h3 className="text-xl font-bold text-gray-900 mb-2">
+      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
         {product.name}
       </h3>
       
-      <p className="text-gray-600 text-sm mb-4">
+      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
         {product.description}
       </p>
 
       <div className="space-y-3 mb-6">
-        <div className="flex items-center space-x-2 text-gray-700">
-          <HardDrive size={16} className="text-blue-600" />
+        <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+          <HardDrive size={16} className="text-blue-600 dark:text-blue-400" />
           <span className="text-sm">{product.ram}GB RAM</span>
         </div>
-        <div className="flex items-center space-x-2 text-gray-700">
-          <Cpu size={16} className="text-purple-600" />
+        <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
+          <Cpu size={16} className="text-purple-600 dark:text-purple-400" />
           <span className="text-sm">{product.cpu}% CPU</span>
         </div>
       </div>
@@ -61,10 +61,10 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="border-t pt-4">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <span className="text-2xl font-bold text-gray-900">
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">
               {formatPrice(product.price)}
             </span>
-            <span className="text-gray-500 text-sm">/bulan</span>
+            <span className="text-gray-500 dark:text-gray-400 text-sm">/bulan</span>
           </div>
         </div>
 

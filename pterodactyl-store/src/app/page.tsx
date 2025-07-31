@@ -21,7 +21,7 @@ export default async function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       <Header />
       
       <main>
@@ -31,17 +31,17 @@ export default async function HomePage() {
         <section id="products" className="py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Panel Pterodactyl Private
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-600 dark:text-gray-300">
                 Pilih paket sesuai kebutuhan Anda
               </p>
             </div>
 
             {/* NodeJS Products */}
             <div className="mb-16">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 flex items-center">
                 🟢 NodeJS VIP (A1-A6)
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -53,7 +53,7 @@ export default async function HomePage() {
 
             {/* VPS Products */}
             <div className="mb-16">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 flex items-center">
                 🔧 VPS (B1-B6)
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -65,7 +65,7 @@ export default async function HomePage() {
 
             {/* Python Products */}
             <div className="mb-16">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 flex items-center">
                 🐍 Python (C1-C6)
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -81,10 +81,10 @@ export default async function HomePage() {
         <Contact />
       </main>
 
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12 border-t border-gray-800 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-4">Antidonasi Store</h3>
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-400 dark:text-gray-300 mb-4">
             Panel Pterodactyl Private - Uptime 99% dengan Garansi Full 30 Day
           </p>
           <div className="flex justify-center space-x-6">
@@ -105,7 +105,7 @@ export default async function HomePage() {
               👥 Community
             </a>
           </div>
-          <p className="text-gray-500 mt-8">
+          <p className="text-gray-500 dark:text-gray-400 mt-8">
             © 2024 Antidonasi Store. All rights reserved.
           </p>
         </div>
